@@ -116,3 +116,28 @@ Comparator is the interface in java that contains the compare method. And by ove
 
 ## Pass by value
 Java always works as a “pass by value”. There is nothing called a “pass by reference” in Java. However, when the object is passed in any method, the address of the value is passed due to the nature of object handling in Java. When an object is passed, a copy of the reference is created by Java and that is passed to the method. The objects point to the same memory location. 
+
+
+## Type Conversion
+There are two types of conversion - 
+    - Implicit - Done by system(also called widening/automatic/type promotion), no data loss
+    - Explicit - Done by programmer to change type into desirable type (also called narrowing), might throw error*
+        ```
+        b = (int)(b * 2);
+        ```  
+* So, for example, typecasting an Integer to a String (String is not a subclass of Integer) results in a ClassCastException exception. Another possible exception is the ClassNotFoundException.
+<a href="https://www.geeksforgeeks.org/type-conversion-java-examples/"> GFG article </a>
+
+## Int Min and Max values
+```
+int a  = Integer.MAX_VALUE;
+int b  = Integer.MIN_VALUE;
+```
+The range of int is ->  -2,147,483,647 to 2,147,483,647 [or -2^31 to 2^31-1]
+
+## For-each loop / Enhanced for loop
+```
+// Loop prints out every element in int array arr
+for(int i : arr)
+    System.out.println(i); 
+```
