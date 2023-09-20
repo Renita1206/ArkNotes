@@ -43,8 +43,7 @@ If there was no OS, there would be no UI, file system, error handling or resourc
 - Multithreading makes the software more responsive and increases throughput
 
 ## Thread vs Process vs Program
-- Thread
-    - ligthweight process, more efficient, segment of a process, shares memory with other threads
+- Thread - ligthweight process, more efficient, segment of a process, shares memory with other threads
 - Process -  Instance of a program in execution, processes are isolated from one another, active state, requires resources, has a PCB(Process control block), exists for a limited span of time
 - Program - Set of instructions, passive state, static, only requires memory, no control block
 
@@ -127,7 +126,8 @@ The cache is a smaller and faster memory that stores copies of the data from fre
 ## Fragmentation
 Processes are stored and removed from memory, which makes free memory space, which is too little to even consider utilizing by different processes.  Suppose, that process is not ready to dispense to memory blocks since its little size and memory hinder consistently staying unused is called fragmentation. This kind of issue occurs during a dynamic memory allotment framework when free blocks are small, so it can’t satisfy any request.
 - External Fragmentation - External fragmentation happens when there’s a sufficient quantity of area within the memory to satisfy the memory request of a method. However, the process’s memory request cannot be fulfilled because the memory offered is in a non-contiguous manner. 
-- Iternal Fragmentation - Internal fragmentation happens when the memory is split into mounted-sized blocks. Whenever a method is requested for the memory, the mounted-sized block is allotted to the method. In the case where the memory allotted to the method is somewhat larger than the memory requested, then the difference between allotted and requested memory is called internal fragmentation. We fixed the sizes of the memory blocks, which has caused this issue. If we use dynamic partitioning to allot space to the process, this issue can be solved.
+- Iternal Fragmentation - Internal fragmentation happens when the memory is split into mounted-sized blocks. Whenever a method is requested for the memory, the mounted-sized block is allotted to the method. In the case where the memory allotted to the method is somewhat larger than the memory requested, then the difference between allotted and requested memory is called internal fragmentation. We fixed the sizes of the memory blocks, which has caused this issue. If we use dynamic partitioning to allot space to the process, this issue can be solved.  
+
 | Internal Fragmentation | External Fragmentation |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 |In internal fragmentation fixed-sized memory, blocks square measure appointed to process. | In external fragmentation, variable-sized memory blocks square measure appointed to the method. | 
