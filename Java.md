@@ -141,3 +141,31 @@ The range of int is ->  -2,147,483,647 to 2,147,483,647 [or -2^31 to 2^31-1]
 for(int i : arr)
     System.out.println(i); 
 ```
+## Pre and Post increment
+- Pre-increment -> ++a
+   - Return after incrementing
+- Post-incrementing -> a++
+   - Return before incrementing
+
+
+## Throw vs Throws
+- Throw - Java throw keyword is used throw an exception explicitly in the code, inside the function or the block of code
+```
+throw new ArithmeticException("\nNumber is negative, cannot calculate square"); 
+```
+- Throws - Java throws keyword is used in the method signature to declare an exception which might be thrown by the function while the execution of the code.
+```
+ public static int divideNum(int m, int n) throws ArithmeticException, IOException
+```
+
+## Assertion
+```
+assert a>b : "XYZ"
+```
+In the above code, if assertion is wrong, ie. a is less than or equal to b then Assertion error is thrown
+AssertionError:XYZ
+
+## Multithreading in Java
+Multithreading can be done using two ways :
+- Extend thread class
+- Implement Runnable interface
